@@ -2,7 +2,7 @@
 
 # 1. Download Debian 13 (Testing) Cloud Image if not exists
 if [ ! -f "debian13.qcow2" ]; then
-    wget -O debian13.qcow2 https://debian.org
+    wget -O debian13.qcow2 https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-13.4.0-amd64-netinst.iso
     qemu-img resize debian13.qcow2 +10G
 fi
 
